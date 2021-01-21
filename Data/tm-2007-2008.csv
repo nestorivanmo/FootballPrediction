@@ -1,21 +1,21 @@
-club,Squad,ø age,Foreigners,Total MV,ø MV
-Chelsea,37,24.6,22,€424.25m,€11.47m
-Man Utd,34,24.5,20,€326.90m,€9.61m
-Liverpool,40,22.5,25,€257.05m,€6.43m
-Arsenal,32,22.3,28,€212.73m,€6.65m
-Spurs,34,23.8,20,€191.88m,€5.64m
-Newcastle,29,25.1,18,€128.10m,€4.42m
-Everton,29,24.4,15,€111.90m,€3.86m
-West Ham,33,25.0,14,€106.25m,€3.22m
-Portsmouth,28,25.4,19,€96.50m,€3.45m
-Man City,30,23.6,19,€89.20m,€2.97m
-Middlesbrough,30,23.6,14,€86.07m,€2.87m
-Aston Villa,24,24.3,10,€83.90m,€3.50m
-Fulham,38,26.7,30,€74.72m,€1.97m
-Bolton,30,25.8,21,€65.63m,€2.19m
-Blackburn,37,24.3,30,€65.20m,€1.76m
-Birmingham,26,24.1,17,€64.45m,€2.48m
-Wigan,29,25.5,19,€58.55m,€2.02m
-Derby,41,25.8,23,€50.57m,€1.23m
-Sunderland,42,24.2,31,€50.43m,€1.20m
-Reading,43,23.9,30,€39.28m,€913Th.
+club,squad_size,avg_age,num_foreigners,market_value,av_market_value
+Chelsea,37,24.6,22,424.25e6,11.47e6
+Manchester United,34,24.5,20,326.90e6,9.61e6
+Liverpool,40,22.5,25,257.05e6,6.43e6
+Arsenal,32,22.3,28,212.73e6,6.65e6
+Tottenham Hotspur,34,23.8,20,191.88e6,5.64e6
+Newcastle United,29,25.1,18,128.10e6,4.42e6
+Everton,29,24.4,15,111.90e6,3.86e6
+West Ham United,33,25.0,14,106.25e6,3.22e6
+Portsmouth,28,25.4,19,96.50e6,3.45e6
+Manchester City,30,23.6,19,89.20e6,2.97e6
+Middlesbrough,30,23.6,14,86.07e6,2.87e6
+Aston Villa,24,24.3,10,83.90e6,3.50e6
+Fulham,38,26.7,30,74.72e6,1.97e6
+Bolton Wanderers,30,25.8,21,65.63e6,2.19e6
+Blackburn Rovers,37,24.3,30,65.20e6,1.76e6
+Birmingham City,26,24.1,17,64.45e6,2.48e6
+Wigan Athletic,29,25.5,19,58.55e6,2.02e6
+Derby County,41,25.8,23,50.57e6,1.23e6
+Sunderland,42,24.2,31,50.43e6,1.20e6
+Reading,43,23.9,30,39.28e6,913e3
