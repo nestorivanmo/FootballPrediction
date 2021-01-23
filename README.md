@@ -1,19 +1,21 @@
-## Todo
-- year
-- month
-- day
-- week_day
-- season
-- home
-- visitor
-- hgoal
-- vgoal
-- result
-- home_ultima_posicion_en_tabla
-- home_penultima_posicion_en_tabla
-- home_posicion_en_tabla
-- visitor_ultima_posicion_en_tabla
-- visitor_penultima_posicion_en_tabla
-- visitor_posicion_en_tabla
-- home_puntos_actuales_tabla
-- visitor_puntos_actuales_tabla
+# FutbolPrediction
+
+## Objective 
+
+Make a ML learning model that predicts the winner of the Premier League 2020-2021 competition.
+
+## Repository Structure
+
+
+
+## Data
+
+The data was taken from the repository: [jalapic/engsoccerdata](https://github.com/jalapic/engsoccerdata)
+
+## Workflow
+
+### Cleaning Data
+
+### Training
+
+## Results
