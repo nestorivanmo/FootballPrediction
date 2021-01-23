@@ -6,7 +6,7 @@ apply both to home and visitor.
 
 import pandas as pd
 import numpy as np 
-from data_manipulation.table import Team, ScoreTable, HistoricScoreTable # Fallar
+from data_manipulation.table import Team, ScoreTable, HistoricScoreTable 
 
 df = pd.read_csv("../data/england-clean.csv")
 
@@ -71,7 +71,7 @@ df['visitor_last_table_position'] = visitor_last_table_position
 df['home_penultimate_table_position'] = home_penultimate_table_position
 df['visitor_penultimate_table_position'] = visitor_penultimate_table_position
 
-df = df.reindex(columns= ['season', 'week_day', 'year', 'month', 'day', 'home','visitor','hgoal', 'vgoal', 
+df = df.reindex(columns= ['season', 'week_day', 'year', 'month', 'day', 'home','visitor', 
                     "home_current_points","visitor_current_points","home_last_table_position",
                     "visitor_last_table_position","home_penultimate_table_position",
                     "visitor_penultimate_table_position", "result"])
