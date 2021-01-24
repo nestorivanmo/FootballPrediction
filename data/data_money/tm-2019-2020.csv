@@ -1,7 +1,7 @@
 club,squad_size,avg_age,num_foreigners,market_value,av_market_value
-Manchester City,34,24.1,23,1.27bn,37.46e6
-Liverpool,56,22.3,31,1.09bn,19.53e6
-Tottenham Hotspur,36,23.8,22,1.04bn,28.94e6
+Manchester City,34,24.1,23,1.27e9,37.46e6
+Liverpool,56,22.3,31,1.09e9,19.53e6
+Tottenham Hotspur,36,23.8,22,1.04e9,28.94e6
 Chelsea,36,23.1,22,797.00e6,22.14e6
 Manchester United,43,22.9,24,775.20e6,18.03e6
 Arsenal,38,23.3,23,680.55e6,17.91e6
@@ -10,7 +10,7 @@ Leicester City,32,24.9,18,384.75e6,12.02e6
 West Ham United,38,25.6,23,371.75e6,9.78e6
 Wolverhampton Wanderers,44,22.1,30,315.40e6,7.17e6
 Newcastle United,41,25.1,22,312.58e6,7.62e6
-Bournemouth,39,23.8,17,311.20e6,7.98e6
+AFC Bournemouth,39,23.8,17,311.20e6,7.98e6
 Watford,43,24.7,25,270.65e6,6.29e6
 Southampton,36,23.4,17,259.80e6,7.22e6
 Crystal Palace,33,25.8,18,248.65e6,7.53e6

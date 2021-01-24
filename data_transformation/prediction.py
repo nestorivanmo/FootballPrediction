@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from table import Team, ScoreTable, HistoricScoreTable 
+from table import Team, ScoreTable, HistoricScoreTable
 
 df = pd.read_csv('../data/england-transformed.csv')
 epl_df = pd.read_csv('../data/epl-2020.csv') #english premier league 2020 dataframe matches
