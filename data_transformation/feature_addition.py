@@ -76,4 +76,3 @@ df = df.reindex(columns= ['season', 'week_day', 'year', 'month', 'day', 'home','
                     "visitor_last_table_position","home_penultimate_table_position",
                     "visitor_penultimate_table_position", "result"])
 df.to_csv('../data/england-transformed.csv', index=False)
-
