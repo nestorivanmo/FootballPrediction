@@ -71,7 +71,7 @@ df['visitor_last_table_position'] = visitor_last_table_position
 df['home_penultimate_table_position'] = home_penultimate_table_position
 df['visitor_penultimate_table_position'] = visitor_penultimate_table_position
 
-df = df.reindex(columns= ['season', 'week_day', 'year', 'month', 'day', 'home','visitor', 
+df = df.reindex(columns = ['season', 'week_day', 'year', 'month', 'day', 'home','visitor',
                     "home_current_points","visitor_current_points","home_last_table_position",
                     "visitor_last_table_position","home_penultimate_table_position",
                     "visitor_penultimate_table_position", "result"])

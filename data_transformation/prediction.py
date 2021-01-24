@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from table import Team, ScoreTable, HistoricScoreTable
+from data_transformation.data_manipulation.table import Team, ScoreTable, HistoricScoreTable
 
 df = pd.read_csv('../data/england-transformed.csv')
 epl_df = pd.read_csv('../data/epl-2020.csv') #english premier league 2020 dataframe matches
@@ -58,4 +58,3 @@ print(epl_df.head())
 print(epl_df.tail())
 
 epl_df.to_csv('../data/england-transformed-2020.csv', index=False)
-
