@@ -56,13 +56,7 @@ class ScoreTable:  # Revisar por el cambio ndarray
     """
     @staticmethod
     def __indice__(arr, value):
-        try:
-            return np.where(arr == int(value))[0][0]            
-        except:
-            print("hola")
-            print(arr)
-            print(value)
-            exit(-1)
+        return np.where(arr == int(value))[0][0]            
         
     def __init__(self, teams):
         self.teams = np.array(teams)
@@ -125,7 +119,7 @@ class Team:
         return None
 
     def __str__(self):
-        return "%d - %d" % (self.name, self.points)
+        return "%s - %d" % (str(self.name), self.points)
 
     def __repr__(self):
         return "Team(name: %d, points: %d)" % (self.name, self.points)
