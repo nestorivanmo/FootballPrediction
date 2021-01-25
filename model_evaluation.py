@@ -46,5 +46,5 @@ for train_season_index, test_season_index in tcsv.split(seasons_unique):
         # print(y_real)
         # print(y_pred)
         a_metric = metrics(y_real, y_pred) 
-        print("{} - {}".format(s, a_metric))
+        print("{} - \n{}\n".format(s, a_metric))
 

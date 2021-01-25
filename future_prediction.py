@@ -20,10 +20,12 @@ def prediction_score_table(model, df, verbose = False):
                                     home, visitor,
                                     home_current_points,
                                     visitor_current_points,
-                               2018 - (0.6, 0.8333333333333334, 1.0)     row.home_last_table_position,
+                                    row.home_last_table_position,
                                     row.visitor_last_table_position,
                                     row.home_penultimate_table_position,
-                                    row.visitor_penultimate_table_position	]])
+                                    row.visitor_penultimate_table_position,
+                                    row.home_value,
+                                    row.visitor_value]])
             if result == 1: # if a draw
                 teams_table.add_points(home, 1)
                 teams_table.add_points(visitor, 1)
