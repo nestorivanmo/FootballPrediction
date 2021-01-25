@@ -6,7 +6,7 @@ apply both to home and visitor.
 
 import pandas as pd
 import numpy as np 
-from data_manipulation.table import Team, ScoreTable, HistoricScoreTable 
+from score_table.table import Team, ScoreTable, HistoricScoreTable 
 
 df = pd.read_csv("../data/england-clean.csv")
 

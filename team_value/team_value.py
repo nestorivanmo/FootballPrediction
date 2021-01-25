@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-
 def read_market_value_csv(location='../data/data_money/', season_start=2005, season_end=2020,
                           col_names=['club', 'squad_size', 'avg_age', 'num_foreigners', 'market_value',
                                      'av_market_value']):

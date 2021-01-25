@@ -1,29 +1,8 @@
 from os import name
 import pandas as pd
 import numpy as np
-from data_transformation.data_manipulation.table import Team, ScoreTable, HistoricScoreTable 
-
-
-def score_season(df, Season):
-    df_temp = df[df.season == Season]
-    last_week_day = int(df_temp.week_day.max())
-    df_season = df[(df.season == Season) & (df.week_day == last_week_day)]
-
-    def teams(name, puntos):
-        teams = []
-        for nombre, punto in zip(name, puntos):
-            teams.append(Team(nombre, punto))
-        return teams
-        
-    home_teams = list(df_season.home)
-    home_points = list(df_season.home_current_points)
-    visitor_teams = list(df_season.visitor)
-    visitor_points = list(df_season.visitor_current_points)
-
-    season_teams = teams(home_teams, home_points) + (teams(visitor_teams,visitor_points))
-    score = ScoreTable(season_teams)
-    score.sort()
-    return score
+from score_table.table import Team, ScoreTable, HistoricScoreTable
+from score_table.create import score_season
 
 if __name__ == '__main__':
 

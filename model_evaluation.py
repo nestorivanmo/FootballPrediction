@@ -1,19 +1,18 @@
 import pandas as pd
 import numpy as np
 import pickle
-from data_transformation.data_manipulation.table import *
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import StandardScaler
-from future_prediction import prediction_score_table
-from data_transformation.prediction import score_season
+from data_transformation.score_table.create import prediction_score_table, score_season
+from data_transformation.score_table.table import *
+from data_transformation.score_table.metrics import metrics
 
 pkl_filename = "model.pkl"
 with open(pkl_filename, 'rb') as file:
     model = pickle.load(file)
 
 football = pd.read_csv('data/england-transformed.csv')
-
 
 seasons = football.season.values
 seasons_unique = football.season.unique()
