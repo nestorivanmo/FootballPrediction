@@ -45,12 +45,16 @@ We remove FT, totgoal, goaldif because those columns can be obtain in function o
 
 ### Flujo de ejecución
 Instrucciones para ejecutar el proyecto: 
+
 **Limpieza de datos**:
     - Ejecutar todas las celdas de **data_cleaning.ipynb**
+
 **Entrenamiento**:
     - Crear el modelo ejecutando todas las celdas de **model.ipynb**
         - **Nota**: el paso anterior guarda el modelo en **model.pkl**
+
 **Predicción 2020**:
     - Ejecutar **future_prediction.py**
+
 **Predicción temporada a temporada**:
     - Ejecutar **model_evaluation.py**
