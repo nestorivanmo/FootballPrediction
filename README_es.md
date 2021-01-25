@@ -35,14 +35,22 @@ We remove FT, totgoal, goaldif because those columns can be obtain in function o
         - puntos actuales en la tabla de posiciones
         - posición en la tabla de posiciones de la última temporada
         - posición en la tabla de posiciones de la penúltima temporada
-    - **team_value/team_value.py**: agrega las columnas del valor en USD para los equipos local y visitante con base en la información de [Transfermarkt](www.transfermarkt.com).
-    - **prediction.py**: 
+    - **team_value.py**: agrega las columnas del valor en USD para los equipos local y visitante con base en la información de [Transfermarkt](www.transfermarkt.com).
+    - **creating_data_2020.py**: crea información para predecir el 2020
 - **future_prediction.py**: predice la tabla de posiciones (```ScoreTable```) para el 2020
 - **model.ipynb**: entrena el modelo con base en el csv **england-transformed.csv** y obtiene las métricas de cada modelo entrenado
 - **model_evaluation.py**: evaluá el modelo entrenado para diferentes temporadas
-- **old_model.ipynb**: evaliación de varios modelos para un dataset que solo contiene fecha, equipo local, equipo visitante y resultado del partido
+- **old_model.ipynb**: evaluación de varios modelos para un dataset que solo contiene fecha, equipo local, equipo visitante y resultado del partido
+- **model.pkl**: almacena el archivo del modelo
 
 ### Flujo de ejecución
-Instrucciones para ejecutar nuestro proyecto: 
-1. Ejecutar todas las celdas de **data_cleaning.ipynb**
-2. 
+Instrucciones para ejecutar el proyecto: 
+**Limpieza de datos**:
+    - Ejecutar todas las celdas de **data_cleaning.ipynb**
+**Entrenamiento**:
+    - Crear el modelo ejecutando todas las celdas de **model.ipynb**
+        - **Nota**: el paso anterior guarda el modelo en **model.pkl**
+**Predicción 2020**:
+    - Ejecutar **future_prediction.py**
+**Predicción temporada a temporada**:
+    - Ejecutar **model_evaluation.py**

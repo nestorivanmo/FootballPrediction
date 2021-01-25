@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from score_table.table import Team, ScoreTable, HistoricScoreTable
 from score_table.create import score_season
+from team_value import set_value
 
 if __name__ == '__main__':
 
@@ -42,4 +43,6 @@ if __name__ == '__main__':
     print(epl_df.tail())
 
     epl_df.to_csv('../data/england-transformed-2020.csv', index=False)
-
+    
+    wp = rp = '../data/england-transformed-2020.csv'
+    set_value(wp, rp)

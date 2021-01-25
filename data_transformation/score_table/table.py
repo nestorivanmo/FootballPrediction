@@ -1,6 +1,5 @@
 from functools import total_ordering
 import numpy as np
-
     
 class HistoricScoreTable:
     def __init__(self):

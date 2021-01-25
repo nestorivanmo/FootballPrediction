@@ -1,4 +1,4 @@
-from table import *
+from .table import *
 import pandas as pd
 import numpy as np
 
@@ -55,8 +55,8 @@ def prediction_score_table(model, df, verbose = False):
                 teams_table.add_points(winner, 3)
         teams_table.sort()
 
-    winner = teams_table.teams[0].from_number_to_team().name.capitalize()
-    teams_table.teams = [Team(name_team.get(team.name), team.points) for team in teams_table.teams]
+    teams_table.from_number_to_team()
+    winner = teams_table.teams[0].name.capitalize()
     teams_table.sort()
     if verbose: 
         print("And the winner is:")
