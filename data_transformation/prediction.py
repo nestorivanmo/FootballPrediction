@@ -1,12 +1,13 @@
+from os import name
 import pandas as pd
 import numpy as np
-from table import Team, ScoreTable, HistoricScoreTable 
+from data_transformation.data_manipulation.table import Team, ScoreTable, HistoricScoreTable 
 
-df = pd.read_csv('../data/england-transformed.csv')
-epl_df = pd.read_csv('../data/epl-2020.csv') #english premier league 2020 dataframe matches
 
-def score_season(Season):
-    df_season = df[(df.season == Season) & (df.week_day == 38)]
+def score_season(df, Season):
+    df_temp = df[df.season == Season]
+    last_week_day = int(df_temp.week_day.max())
+    df_season = df[(df.season == Season) & (df.week_day == last_week_day)]
 
     def teams(name, puntos):
         teams = []
@@ -24,38 +25,42 @@ def score_season(Season):
     score.sort()
     return score
 
+if __name__ == '__main__':
 
-score_season_2018 = score_season(2018)
-score_season_2019 = score_season(2019)
+    df = pd.read_csv('../data/england-transformed.csv')
+    epl_df = pd.read_csv('../data/epl-2020.csv') #english premier league 2020 dataframe matches
 
-def get_table_position(team, score_table):
-    if not score_table.team_exists(team):
-        return 21
-    position = score_table.get_position(team)
-    return position
+    score_season_2018 = score_season(df, 2018)
+    score_season_2019 = score_season(df, 2019)
 
-# Home and visitor position in the last season 
-home_last_table_position = []
-visitor_last_table_position = []
+    def get_table_position(team, score_table):
+        if not score_table.team_exists(team):
+            return 21
+        position = score_table.get_position(team)
+        return position
 
-# Home and visitor position in the penultimate season 
-home_penultimate_table_position = []
-visitor_penultimate_table_position = []
+    # Home and visitor position in the last season 
+    home_last_table_position = []
+    visitor_last_table_position = []
 
-for index, row in epl_df.iterrows():
-    home, visitor = row.home, row.visitor
-    home_last_table_position.append(get_table_position(home, score_season_2019))
-    visitor_last_table_position.append(get_table_position(visitor, score_season_2019))
-    home_penultimate_table_position.append(get_table_position(home, score_season_2018))
-    visitor_penultimate_table_position.append(get_table_position(visitor, score_season_2018))
+    # Home and visitor position in the penultimate season 
+    home_penultimate_table_position = []
+    visitor_penultimate_table_position = []
 
-epl_df['home_last_table_position'] = home_last_table_position
-epl_df['visitor_last_table_position'] = visitor_last_table_position
-epl_df['home_penultimate_table_position'] = home_penultimate_table_position
-epl_df['visitor_penultimate_table_position'] = visitor_penultimate_table_position
+    for index, row in epl_df.iterrows():
+        home, visitor = row.home, row.visitor
+        home_last_table_position.append(get_table_position(home, score_season_2019))
+        visitor_last_table_position.append(get_table_position(visitor, score_season_2019))
+        home_penultimate_table_position.append(get_table_position(home, score_season_2018))
+        visitor_penultimate_table_position.append(get_table_position(visitor, score_season_2018))
 
-print(epl_df.head())
-print(epl_df.tail())
+    epl_df['home_last_table_position'] = home_last_table_position
+    epl_df['visitor_last_table_position'] = visitor_last_table_position
+    epl_df['home_penultimate_table_position'] = home_penultimate_table_position
+    epl_df['visitor_penultimate_table_position'] = visitor_penultimate_table_position
 
-epl_df.to_csv('../data/england-transformed-2020.csv', index=False)
+    print(epl_df.head())
+    print(epl_df.tail())
+
+    epl_df.to_csv('../data/england-transformed-2020.csv', index=False)
 
