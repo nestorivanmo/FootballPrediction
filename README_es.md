@@ -12,14 +12,15 @@ Las fuentes de información para construir el dataset final encontrado en **engl
 
 ### Flujo de trabajo
 
-### Cleaning Data
+### Limpieza de Datos
 In this part of the project we drop some columns and add some columns. We consider that the week game,  
 
 We remove FT, totgoal, goaldif because those columns can be obtain in function of others columns.
 
-### Training
+### Entrenamiento
 
-## Results
+## Resultados
+[Link a Google Slides](https://docs.google.com/presentation/d/1pHq633Oyv59QbxmYaV5JyCI9ezNjLUsfqcITZkF37QA/edit?usp=sharing)
 
 ## Estructura del repositorio
 
