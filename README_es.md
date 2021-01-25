@@ -13,9 +13,6 @@ Las fuentes de información para construir el dataset final encontrado en **engl
 ### Flujo de trabajo
 
 ### Limpieza de Datos
-In this part of the project we drop some columns and add some columns. We consider that the week game,  
-
-We remove FT, totgoal, goaldif because those columns can be obtain in function of others columns.
 
 ### Entrenamiento
 
