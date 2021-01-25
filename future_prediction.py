@@ -1,6 +1,6 @@
 from os import name
 import pandas as pd
-import numpy as np 
+import numpy as np
 import pickle
 from data_transformation.data_manipulation.table import ScoreTable, Team
 
@@ -20,7 +20,7 @@ def prediction_score_table(model, df, verbose = False):
                                     home, visitor,
                                     home_current_points,
                                     visitor_current_points,
-                                    row.home_last_table_position,
+                               2018 - (0.6, 0.8333333333333334, 1.0)     row.home_last_table_position,
                                     row.visitor_last_table_position,
                                     row.home_penultimate_table_position,
                                     row.visitor_penultimate_table_position	]])
