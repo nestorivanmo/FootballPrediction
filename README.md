@@ -4,6 +4,11 @@
 
 Make a ML learning model that predicts the winner of the Premier League 2020-2021 competition.
 
+## Collaborators
+
+- [Patricio Barrero](https://github.com/patoba)
+- [Alejandro R. Bondi](https://github.com/bondi7/)
+
 ## Repository Structure
 
 ## Data
