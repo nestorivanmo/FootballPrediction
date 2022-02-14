@@ -4,6 +4,10 @@
 
 Make a ML learning model that predicts the winner of the Premier League 2020-2021 competition.
 
+## Results
+
+Our results can be found [here](https://github.com/nestorivanmo/FootballPrediction/blob/main/PPCD%20Proyecto%20Final%20-%20FootballPrediction.pdf)
+
 ## Collaborators
 
 - [Patricio Barrero](https://github.com/patoba)
